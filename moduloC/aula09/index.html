@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: skyblue;
+        }
+        div#um{
+            position: absolute;
+            top: 15%;
+            left: 20%;
+            background-color: lightgray;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.397);
+        }
+        div#dois{
+            display: inline-block;
+        }
+        h1{
+            border-radius: 10px 10px 0px 0px;
+            padding: 7px;
+            background-color: rgb(150, 150, 150);
+            text-align: center;
+            width: 100%;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
+        }
+    </style>
+</head>
+<body>
+    <div id="um">
+        <h1>Estudos do DOM</h1>
+        <p>aqui vai o resultado</p>
+        <p>Aprendendo <strong>DOM</strong> em JS</p>
+        <div id="dois">Clique em mim</div>
+    </div>
+    <script>
+       let d = window.document.querySelector('div#dois')
+       d.style.color = 'red'
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            background-color: skyblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        div#container{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background-color: white;
+            height: max-content;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        input#btn{
+            margin-top: 25px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid;
+            cursor: pointer;
+        }
+        #res{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #img{
+            height: 250px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Sitema de Multas</h1>
+        Velocidade do seu carro: <input type="number" name="txtvel" id="vel"> Km/h
+        <input type="button"  id="btn" value="Verificar" onclick="verificar()">
+        <div id="res">
+            Resultado...
+        </div>
+        <div id="img">
+
+        </div>
+    </div>
+    <script>
+        
+        function verificar(){
+            let velo = document.querySelector('input#vel')
+            let vel = Number(velo.value)
+                if(vel > 80){
+                    res.innerHTML = `Você está a ${vel}Km/h, está acima da velocidade!`
+
+                    let img = document.getElementById("img")
+
+                    img.style.backgroundImage = "URL(https://www.jornalcontabil.com.br/images/noticias/49479/da8fe8e31c80379e29c4e28e726e6ee1.jpg)"
+
+                }else{
+                    res.innerHTML = `Você está a ${vel}Km/h, dentro da velocidade permitida.`
+                    let img = document.getElementById("img")
+
+                    img.style.backgroundImage = "URL(https://www.revistaadventista.com.br/wp-content/uploads/2015/04/Fotolia_54530330.png)"
+                }
+                
+        }
+    </script>
+</body>
+</html>

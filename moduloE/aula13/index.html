@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <link rel="stylesheet" href="estilo/aula13.css">
+</head>
+<body>
+    <main>
+        <h1>Hora do dia</h1>
+        <div id="bloco">
+            <p id="texto-interativo">agora são XX horas</p>
+            <div id="imagem-dinamica">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@Eogabs</p>
+    </footer>
+    <script>
+        let hoje = new Date()
+        let agora = hoje.getHours()
+
+        let texto = document.getElementById('texto-interativo')
+        texto.innerHTML = `agora são ${agora} horas.`
+    </script>
+</body>
+</html>

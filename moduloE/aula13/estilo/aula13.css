@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #0A4163;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+div#bloco{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.363);
+}
+div#imagem-dinamica{
+    background-image: url(https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg);
+    height: 300px;
+    width: 450px;
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+p{
+    text-align: center;
+}
+footer{
+    margin-top: 25px;
+    color: white;
+}
+#texto-interativo{
+    margin: 10px;
+    padding: 10px;
+}

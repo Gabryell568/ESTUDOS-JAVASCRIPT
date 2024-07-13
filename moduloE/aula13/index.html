@@ -10,7 +10,7 @@
     <main>
         <h1>Hora do dia</h1>
         <div id="bloco">
-            <p id="texto-interativo">agora são XX horas</p>
+            <h2 id="texto-interativo">agora são XX horas</h2>
             <div id="imagem-dinamica">
                 
             </div>
@@ -19,12 +19,6 @@
     <footer>
         <p>@Eogabs</p>
     </footer>
-    <script>
-        let hoje = new Date()
-        let agora = hoje.getHours()
-
-        let texto = document.getElementById('texto-interativo')
-        texto.innerHTML = `agora são ${agora} horas.`
-    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>

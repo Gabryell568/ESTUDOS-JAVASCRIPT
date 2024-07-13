@@ -13,6 +13,9 @@ h1{
     padding: 10px;
     margin-bottom: 10px;
 }
+h2{
+    text-align: center;
+}
 div#bloco{
     background-color: white;
     width: 500px;
@@ -23,8 +26,7 @@ div#bloco{
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.363);
 }
 div#imagem-dinamica{
-    background-image: url(https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg);
-    height: 300px;
+    height: 550px;
     width: 450px;
     background-size: cover;
     display: block;
